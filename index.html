@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steam Home</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Le Nguyen Minh Doan"> 
+        <meta name="description" content="web front end, web development, web designer, software, steam, game">
+        <meta name="viewport" content="width-device-width,initial-scale=2.0,use-scalable=no">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="image_src" href="http://store.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="my_name">
+            <div class="my_web">Công nghệ/Ngôn ngữ: HTML 5 – CSS 3 | Responsive: Không</div>
+            <hr style="height:1px">
+            <marquee direction="right">Lê Nguyễn Minh Đoàn - minhdoan.zaphkiel@gmail.com</marquee></div>
+        <nav id="nav_main">
+            <div id="nav_1">
+                <img src="http://store.akamai.steamstatic.com/public/shared/images/header/globalheader_logo.png?t=962016">
+                <div id="nav_store" class="menu_1">STORE
+                    <div id="nav_store_hover">
+                        <span class="hover_nav">  FEATURED</span>
+                        <span class="hover_nav">  EXPLORE</span>
+                        <span class="hover_nav">  CURATORS</span>
+                        <span class="hover_nav">  WISHLIST</span>
+                        <span class="hover_nav">  NEWS</span>
+                        <span class="hover_nav">  STATS</span>
+                    </div>
+                </div>
+                <div id="nav_com" class="menu_1">COMMUNITY
+                    <div id="nav_com_hover">
+                        <span class="hover_nav">  HOME</span>
+                        <span class="hover_nav">  DISCUSSIONS</span>
+                        <span class="hover_nav">  WORKSHOP</span>
+                        <span class="hover_nav">  GREENLIGHT</span>
+                        <span class="hover_nav">  MARKET</span>
+                        <span class="hover_nav">  BROADCASTS</span>
+                    </div>    
+                </div>
+                <div id="nav_about" class="menu_1">ABOUT</div>
+                <div id="nav_support" class="menu_1">SUPPORT</div>
+                
+            </div>
+            <div id="nav_2">
+                <div id="install_box" class="menu_2"><i class="fa fa-download" aria-hidden="true"></i>          Install Steam</div>
+                <div id="login" class="menu_2">login</div>
+                <div id="language" class="menu_2">language                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <div id="nav_language_hover">
+                        <span class="hover_nav1">Български (Bulgarian)</span>
+                        <span class="hover_nav1">čeština (Czech)</span>
+                        <span class="hover_nav1">Dansk (Danish)</span>
+                        <span class="hover_nav1">Nederlands (Dutch)</span>
+                        <span class="hover_nav1">Suomi (Finnish)</span>
+                           <span class="hover_nav1">Français (French)</span>
+                        <span class="hover_nav1">Ελληνικά (Greek)</span>
+                        <span class="hover_nav1">Deutsch (German)</span>
+                        <span class="hover_nav1">Magyar (Hungarian)</span>
+                        <span class="hover_nav1">Italiano (Italian)</span>
+                           <span class="hover_nav1">日本語 (Japanese)</span>
+                        <span class="hover_nav1">한국어 (Korean)</span>
+                        <span class="hover_nav1">Norsk (Norwegian)</span>
+                        <span class="hover_nav1">Polski (Polish)</span>
+                        <span class="hover_nav1">Português (Portuguese)</span>
+                           <span class="hover_nav1">Português-Brasil (Portuguese-Brazil)</span>
+                        <span class="hover_nav1">Русский (Russian)</span>
+                        <span class="hover_nav1">Română (Romanian)</span>
+                        <span class="hover_nav1">简体中文 (Simplified Chinese)</span>
+                        <span class="hover_nav1">Español (Spanish)</span>
+                           <span class="hover_nav1">Svenska (Swedish)</span>
+                        <span class="hover_nav1">繁體中文 (Traditional Chinese)</span>
+                        <span class="hover_nav1">ไทย (Thai)</span>
+                        <span class="hover_nav1">Türkçe (Turkish)</span>
+                        <span class="hover_nav1">Українська (Ukrainian)</span>
+                    </div>
+                </div>
+                <script src="./jquery-3.1.1.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#language').click(function() {
+                                $('#nav_language_hover').toggle();
+                        });
+                    });
+                </script>
+            </div>
+        </nav>
+        <div id="main_body">
+            <div id="left_col">
+                <ul id="left_menu">
+                        <li class="left_nav">RECOMMENDED</li>
+                        <li class="left_m1"><i class="fa fa-users" aria-hidden="true"></i>By Friends</li>
+                        <li class="left_m1"><i class="fa fa-podcast" aria-hidden="true"></i>By Curators</li>
+                        <li class="left_m1"><i class="fa fa-tags" aria-hidden="true"></i>Tags</li>
+                        <li class="left_nav">DISCOVERY QUEUES</li>
+                        <li class="left_m1"><i class="fa fa-object-group" aria-hidden="true"></i>Recommendations</li>
+                        <li class="left_m1"><i class="fa fa-plus-square" aria-hidden="true"></i>News Releases</li>
+                        <li class="left_nav">BROWSE CATEGORIES</li>
+                        <li class="left_m1"><i class="fa fa-line-chart" aria-hidden="true"></i>Top Sellers</li>
+                        <li class="left_m1"><i class="fa fa-refresh" aria-hidden="true"></i>Recently Updated</li>
+                        <li class="left_m1"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Releases</li>
+                        <li class="left_m1"><i class="fa fa-clock-o" aria-hidden="true"></i>Upcoming</li>
+                        <li class="left_m1"><i class="fa fa-percent" aria-hidden="true"></i>Specials</li>
+                        <li class="left_m1"><i class="fa fa-vimeo-square" aria-hidden="true"></i>Virtual Reality</li>
+                        <li class="left_m1"><i class="fa fa-gamepad" aria-hidden="true"></i>Steam Controller</li>
+                        <li class="left_nav">BROWSE BY GENRE</li>
+                        <li class="left_m1">Free to Play</li>
+                        <li class="left_m1">Early Access</li>
+                        <li class="left_m1">Action</li>
+                        <li class="left_m1">Adventure</li>
+                        <li class="left_m1">Casual</li>
+                        <li class="left_m1">Indie</li>
+                        <li class="left_m1">Massively Multiplayer</li>
+                        <li class="left_m1">Racing</li>
+                        <li class="left_m1">RPG</li>
+                        <li class="left_m1">Simulation</li>
+                        <li class="left_m1">Sports</li>
+                        <li class="left_m1">Strategy</li>
+                        <li class="left_nav">RECENTLY VIEWED</li>
+                        <li class="left_m1">Garry's Mod</li>
+                        <li class="left_m1">Golf With Your Friends</li>
+                </ul>
+            </div>
+            <div id="right_col">
+                <div id="right_menu">
+                    <div id="right_table">
+                        <div id="menu_store" class="right_menu_column">Your Store                   <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <div class="store_dropdown">
+                                <span class="hover_store">  Store Home</span>
+                                <span><hr></span>
+                                <span class="hover_store">  Recently Viewed</span>
+                                <span class="hover_store">  Steam Curators</span>
+                                <span class="hover_store">  Recently Updated</span>
+                            </div>
+                        </div>
+                        <div class="right_menu_column">Games                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <div class="store_dropdown">
+                                <span class="hover_store">  Free to Play</span>
+                                <span class="hover_store">  Early Access</span>
+                                <span class="hover_store">  Demos</span>
+                                <span class="hover_store">  Virtual Reality</span>
+                                <span class="hover_store">  Steam Controller</span>
+                                <span><hr></span>
+                                <span class="hover_store12">  Browse by Genre:</span>
+                                <span class="hover_store">  Action</span>
+                                <span class="hover_store">  Adventure</span>
+                                <span class="hover_store">  Casual</span>
+                                <span class="hover_store">  Indie</span>
+                                <span class="hover_store">  Massively Multiplayer</span>
+                                <span class="hover_store">  Racing</span>
+                                <span class="hover_store">  RPG</span>
+                                <span class="hover_store">  Simulation</span>
+                                <span class="hover_store">  Sports</span>
+                                <span class="hover_store">  Strategy</span>
+                                <span><hr></span>
+                                <span class="hover_store">  See popular tags</span>
+                                <span><hr></span>
+                                <span class="hover_store12">  Browse by FLatform:</span>
+                                <span class="hover_store">  Mac OS X</span>
+                                <span class="hover_store">  Free to Play</span>
+                                <span class="hover_store">  SteamOS + Linux</span>
+                            </div>
+                        </div>
+                        <div class="right_menu_column">Software                 <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <div class="store_dropdown">
+                                <span class="hover_store">  Animation &#38; Modeling</span>
+                                <span class="hover_store">  Audio Production</span>
+                                <span class="hover_store">  Design &#38; Illstration</span>
+                                <span class="hover_store">  Game Development</span>
+                                <span class="hover_store">  Photo Editing</span>
+                                <span class="hover_store">  Utilities</span>
+                                <span class="hover_store">  Video Production</span>
+                                <span class="hover_store">  Web Publishing</span>
+                            </div>
+                        </div>
+                        <div class="right_menu_column">Hardware                 <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <div class="store_dropdown">
+                                <span class="hover_store">  Steam Controller</span>
+                                <span class="hover_store">  Steam Link</span>
+                                <span class="hover_store">  Steam Machines</span>
+                                <span class="hover_store">  HTC Vive</span>
+                        </div>
+                        </div>
+                        <div class="right_menu_column">Videos</div>
+                        <div class="right_menu_column">News</div>
+                    </div>
+                    <div id="search"><span id="search_box">
+                        <input type="text" placeholder="search the store">
+                        <button type="button" id="bootom_search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                    </div>
+                </div>
+                <div class="right_part_1">
+                    <div id="right_right1" class="icon_right1">
+                        <div class="dada">
+                            <div class="triangle4"></div>
+                            <div class="triangle5"></div>
+                        </div>
+                        <div class="adad">
+                            <div class="triangle6"></div>
+                        </div>
+                    </div>
+                    <div id="left_left1" class="icon_left1">
+                        <div class="kjkj">
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
+                        </div>
+                        <div class="jkjk">
+                            <div class="triangle3"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="right_part_1_nav">FEATURED &#38; RECOMMENDED</div>
+                    <div class="right_part_1_img"> 
+                        <div class="banner_game"><img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/capsule_616x353.jpg?t=1485828481" alt="picture_1"> </div>
+                        <div class="mini_banner">
+                            <div class="cau_1">ARK: Survival Evolved</div>
+                            <div class="cau_2">
+                                    <div id="pic_items1" class="pic_items1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/ss_ceb6ef2634d295629c23b79d888caf3362e36dab.600x338.jpg" alt="picture_1"></div>
+                                    <div id="pic_items2" class="pic_items2"><img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/ss_2fd997a2f7151cb2187043a1f41589cc6a9ebf3a.600x338.jpg" alt="picture_3"></div>
+                                    <div id="pic_items3" class="pic_items3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/ss_089d5e23480ec653e99ed2f9bafbd4cc1de0eaa3.600x338.jpg" alt="picture_4"></div>
+                                    <div id="pic_items4" class="pic_items4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/ss_329a9ef9eb749ca230f25e6e702adb58d122fb7e.600x338.jpg" alt="picture_5"></div>
+                            </div>
+                            <div class="cau_3">
+                                <div class="cau_3_nav">New DLC Available</div>
+                                <div class="cau_3_body">Top Seller</div>
+                                <div class="cau_3_end">
+                                    <div class="cau_3_end_price">$29.99 USB</div>
+                                    <div class="cau_3_end_icon">
+                                        <i class="fa fa-windows" aria-hidden="true"></i>
+                                        <i class="fa fa-apple" aria-hidden="true"></i>
+                                        <span id="icon_border"><i class="fa fa-steam-square" aria-hidden="true"></i></span>
+                                        <i class="fa fa-superpowers" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div id="hover_for_game0" class="hover_for_game">
+                                    <p style="font-weight:5" style="color:#0C161F">ARK: Survival Evolved</p>
+                                    <div style="font-size:11px">Released: 2 Jun, 2015</div>
+                                    <div style="font-size:14px"><br>As a man or woman stranded naked, freezing &#38; starving on a mysterious island, you must hunt, harvest, craft items, grow crops, &#38; build shelters to survive. Use skill &#38; cunning to kill, tame, breed, &#38; ride Dinosaurs &#38; primeval creatures living on ARK, and team up with hundreds of...
+                                    <br>
+                                    <br>Overall user reviews:
+                                    <br><span style="color:#AF6528">Mixed </span> (121,188 reviews)
+                                    </div>
+                                    <div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-windows" aria-hidden="true"></i>
+                                        <i class="fa fa-apple" aria-hidden="true"></i>
+                                        <span class="icon_border1"><i class="fa fa-steam-square" aria-hidden="true"></i></span>
+                                        <i class="fa fa-superpowers" aria-hidden="true"></i></div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i><i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                   <div>User tags:
+                                        <br> <div class="hover_for_game_icon1">Early Access
+                                        </div>
+                                       <div class="hover_for_game_icon1">Survival
+                                        </div>
+                                       <div class="hover_for_game_icon1">Dinosaurs
+                                        </div>
+                                       <div class="hover_for_game_icon1">Open World
+                                        </div>
+                                   </div>
+                        </div>
+                        </div>
+                    
+                    <!-- format for slideshow 1 -->
+                    <div class="right_part_1_img"> 
+                        <div class="banner_game"><img src="http://cdn.akamai.steamstatic.com/steam/apps/304390/capsule_616x353.jpg?t=1487048403" alt="picture_1"> </div>
+                        <div class="mini_banner">
+                            <div class="cau_1">FOR HONOR™</div>
+                            <div class="cau_2">
+                                    <div id="pic_items1" class="pic_items1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/304390/ss_4614beb37c6136aa1990f12332cd8dba4274ea18.600x338.jpg" alt="picture_1"></div>
+                                    <div id="pic_items2" class="pic_items2"><img src="http://cdn.akamai.steamstatic.com/steam/apps/304390/ss_8da959707a8aef0ec6831823d4107c5dabd50c1c.600x338.jpg" alt="picture_3"></div>
+                                    <div id="pic_items3" class="pic_items3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/304390/ss_d35e5f034b82e70bdf8c30956530bd033ce428d6.600x338.jpg" alt="picture_4"></div>
+                                    <div id="pic_items4" class="pic_items4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/304390/ss_317109f669d0ca77af24abf5d0d29a463c96b4f1.600x338.jpg" alt="picture_5"></div>
+                            </div>
+                            <div class="cau_3">
+                                <div class="cau_3_nav">Now Available</div>
+                                <div class="cau_3_body">Top Seller</div>
+                                <div class="cau_3_end">
+                                    <div class="cau_3_end_price">$59.99 USB</div>
+                                    <div class="cau_3_end_icon">
+                                        <i class="fa fa-windows" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="hover_for_game1" class="hover_for_game">
+                                    <p style="font-weight:5" style="color:#0C161F">FOR HONOR™</p>
+                                    <div style="font-size:11px">Released: 13 Feb, 2017</div>
+                                    <div style="font-size:14px"><br>Carve a path of destruction through an intense, believable battlefield in for honor
+                                    <br>
+                                    <br>Overall user reviews:
+                                    <br><span style="color:#66C0F4">Very Positive </span> (77q reviews)
+                                    </div>
+                                    <div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-windows" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i><i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                   <div>User tags:
+                                        <br> <div class="hover_for_game_icon1">Medieval
+                                        </div>
+                                       <div class="hover_for_game_icon1">Action
+                                        </div>
+                                       <div class="hover_for_game_icon1">Swordplay
+                                        </div>
+                                       <div class="hover_for_game_icon1">Multiplayer
+                                        </div>
+                                       <div class="hover_for_game_icon1">PvP
+                                        </div>
+                                   </div>
+                                </div>
+                    </div>
+                    
+                    <div class="right_part_1_img"> 
+                        <div class="banner_game"><img src="http://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1479515605" alt="picture_1"> </div>
+                        <div class="mini_banner">
+                            <div class="cau_1">Counter-Strike:Global Offensive</div>
+                            <div class="cau_2">
+                                    <div id="pic_items1" class="pic_items1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/730/ss_34090867f1a02b6c17652ba9043e3f622ed985a9.600x338.jpg" alt="picture_1"></div>
+                                    <div id="pic_items2" class="pic_items2"><img src="http://cdn.akamai.steamstatic.com/steam/apps/730/ss_1d30c9a215fd621e2fd74f40d93b71587bf6409c.600x338.jpg" alt="picture_3"></div>
+                                    <div id="pic_items3" class="pic_items3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/730/ss_baa02e979cd3852e3c4182afcd603ab64e3502f9.600x338.jpg" alt="picture_4"></div>
+                                    <div id="pic_items4" class="pic_items4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/730/ss_ffe584c163a2b16e9c1b733b1c8e2ba669fb1204.600x338.jpg" alt="picture_5"></div>
+                            </div>
+                            <div class="cau_3">
+                                <div class="cau_3_nav">Now Available</div>
+                                <div class="cau_3_body">Top Seller</div>
+                                <div class="cau_3_end">
+                                    <div class="cau_3_end_price">$14.99 USB</div>
+                                    <div class="cau_3_end_icon">
+                                        <i class="fa fa-windows" aria-hidden="true"></i>
+                                        <i class="fa fa-apple" aria-hidden="true"></i>
+                                        <i class="fa fa-steam-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="hover_for_game2" class="hover_for_game">
+                                    <p style="font-weight:5" style="color:#0C161F">Counter-Strike: Global Offensive</p>
+                                    <div style="font-size:11px">Released: 21 Aug, 2012</div>
+                                    <div style="font-size:14px"><br>Counter-Strike:Global Offensive (CS:GO) will expand upon the team-based action gameplay that it pioneered when it was launched 14 years ago. CS:GO features new maps, characters, and weapons and delivers updated versions of the classic CS content(de_dust, etc.).
+                                    <br>
+                                    <br>Overall user reviews:
+                                    <br><span style="color:#66C0F4">Very Positive </span> (1,700,800 reviews)
+                                    </div>
+                                    <div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-windows" aria-hidden="true"></i>
+                                        <i class="fa fa-apple" aria-hidden="true"></i>
+                                            <i class="fa fa-steam-square" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i><i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                   <div>User tags:
+                                        <br> <div class="hover_for_game_icon1">FPS
+                                        </div>
+                                       <div class="hover_for_game_icon1">Multiplayer
+                                        </div>
+                                       <div class="hover_for_game_icon1">Shooter
+                                        </div>
+                                       <div class="hover_for_game_icon1">Action
+                                        </div>
+                                       <div class="hover_for_game_icon1">Team-Based
+                                        </div>
+                                   </div>
+                        </div>
+                    </div>
+                    
+                        <div class="right_part_1_img">  
+                        <div class="banner_game"><img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1485959936" alt="picture_1"> </div>
+                        <div class="mini_banner">
+                            <div class="cau_1">Grand Thef Auto V</div>
+                            <div class="cau_2">
+                                    <div id="pic_items1" class="pic_items1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/ss_fae62fcb24412928d97ec23b6bd9473b26690596.600x338.jpg" alt="picture_1"></div>
+                                    <div id="pic_items2" class="pic_items2"><img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/ss_3ce5439cfdd04d1c53487f7057d45360839c0205.600x338.jpg" alt="picture_3"></div>
+                                    <div id="pic_items3" class="pic_items3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/ss_bb5725e2200df97b28908bccb9e8268780489506.600x338.jpg" alt="picture_4"></div>
+                                    <div id="pic_items4" class="pic_items4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/ss_ea299fb00e9789ce97bc6c690d9f99180bab03ab.600x338.jpg" alt="picture_5"></div>
+                            </div>
+                            <div class="cau_3">
+                                <div class="cau_3_nav">Now Available</div>
+                                <div class="cau_3_body">Top Seller</div>
+                                <div class="cau_3_end">
+                                    <div class="cau_3_end_price">$44.99 USB</div>
+                                    <div class="cau_3_end_icon">
+                                        <i class="fa fa-windows" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="hover_for_game3" class="hover_for_game">
+                                    <p style="font-weight:5" style="color:#0C161F">Grand Thef Auto V</p>
+                                    <div style="font-size:11px">Released: 13 Apr, 2015</div>
+                                    <div style="font-size:14px"><br>The two latest additions to GTA Online are out now: the luxurious and lightweight Dewbauchee Specter sports car, and Collection Time, the new Adversary Mode where you'll pick your opponents pockets to rack up wins. Play now.
+                                    <br>
+                                    <br>Overall user reviews:
+                                    <br><span style="color:#AF6528">Mixed </span> (121,188 reviews)
+                                    </div>
+                                    <div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-windows" aria-hidden="true"></i></div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i><i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        </div>
+                                    
+                                    </div>
+                                   <div>User tags:
+                                        <br> <div class="hover_for_game_icon1">Open World
+                                        </div>
+                                       <div class="hover_for_game_icon1">Action
+                                        </div>
+                                       <div class="hover_for_game_icon1">Multiplayer
+                                        </div>
+                                       <div class="hover_for_game_icon1">First-Person
+                                        </div>
+                                   </div>
+                            </div>
+                    </div>
+        
+                    <div class="right_part_1_img"> 
+                        <div class="banner_game"><img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/capsule_616x353.jpg?t=1481653601" alt="picture_1"> </div>
+                        <div class="mini_banner">
+                            <div class="cau_1">H1Z1: King of the Kill</div>
+                            <div class="cau_2">
+                                    <div id="pic_items1" class="pic_items1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/ss_f7f6c873280c1eef6d5db320b788344c2f1daf97.600x338.jpg" alt="picture_1"></div>
+                                    <div id="pic_items2" class="pic_items2"><img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/ss_ca1485521a7f5ebcd9cdbff455916f275d60cf1c.600x338.jpg" alt="picture_3"></div>
+                                    <div id="pic_items3" class="pic_items3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/ss_62b3ef06e7b868436c7a0d364cbdc1de24eb37b0.600x338.jpg" alt="picture_4"></div>
+                                    <div id="pic_items4" class="pic_items4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/ss_62d764ed9f36a4eedb072497d4623d53ff525674.600x338.jpg" alt="picture_5"></div>
+                            </div>
+                            <div class="cau_3">
+                                <div class="cau_3_nav">Early Access Now Available</div>
+                                <div class="cau_3_body">Top Seller</div>
+                                <div class="cau_3_end">
+                                    <div class="cau_3_end_price">$19.99 USB</div>
+                                    <div class="cau_3_end_icon">
+                                        <i class="fa fa-windows" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div id="hover_for_game4" class="hover_for_game">
+                                <p style="font-weight:5" style="color:#0C161F">H1Z1: King of the Kill</p>
+                                    <div style="font-size:11px">Released: 17 Feb, 2016</div>
+                                    <div style="font-size:14px"><br>H1Z1: King of the Kill is a fast-paced shooter in which players compete in large-scale chaotic PvP spectacles of skill, wit and a little luck, where everyone must fight to the death to stand alone at the top of the podium.
+                                    <br>
+                                    <br>Overall user reviews:
+                                    <br><span style="color:#AF6528">Mixed </span> (46,965 reviews)
+                                    </div>
+                                    <div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-windows" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="hover_for_game_icon1"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i><i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                   <div>User tags:
+                                        <br>    
+                                       <div class="hover_for_game_icon1">Early Access</div>
+                                       <div class="hover_for_game_icon1">Survival</div>
+                                       <div class="hover_for_game_icon1">Massively Multiplayer
+                                       </div>
+                                   </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="right_part_2">
+                    <div id="right_right2" class="icon_right1">
+                        <div class="dada">
+                            <div class="triangle4"></div>
+                            <div class="triangle5"></div>
+                        </div>
+                        <div class="adad">
+                            <div class="triangle6"></div>
+                        </div>
+                    </div>
+                    <div id="left_left2" class="icon_left1">
+                        <div class="kjkj">
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
+                        </div>
+                        <div class="jkjk">
+                            <div class="triangle3"></div>
+                        </div>
+                    </div>
+                    <div class="right_part_2_nav">
+                        <span id="text11" class="text111">SPECIAL OFFERS</span>
+                        <span id="text22" class="text222">BROWSE ALL</span>
+                    </div>
+                    <div id="right_part_2_body">
+                        <div id="right_part_2_1" class="slide22">
+                            <div id="img11" class="img111"><img src="http://cdn.akamai.steamstatic.com/steam/spotlights/07898522cda2c8761f063d55/spotlight_image_english.png?t=1487118762">
+                                <div class="img111_info">
+                                    <div class="img111_lineheight"><span>MIDWEEK MADNESS</span>
+                                    <span style="font-size:12px"><br>Offers end Friday at 10am Pacific Time</span>
+                                    </div>
+                                </div>
+                            </div>
+                               <div id="img22" class="img111"><img src="http://cdn.akamai.steamstatic.com/steam/spotlights/da0ba1374780cacd5e210100/spotlight_image_english.jpg?t=1487088258">
+                                <div class="img111_info">
+                                    <div class="img111_lineheight"><span>MIDWEEK MADNESS</span>
+                                    <span style="font-size:12px"><br>Offers end Friday at 10am Pacific Time</span>
+                                    </div>
+                                </div>
+                            </div>
+                                 <div id="img33" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/42960/header.jpg?t=1481558478">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-75&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶1̶̶9̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$4.99 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="img44" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/359870/header.jpg?t=1487113711">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-50&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶2̶̶9̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$14.99 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="right_part_2_2" class="slide22">
+                                   <div id="img55" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/415200/header.jpg?t=1486037114">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-50&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶3̶̶4̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$14.99 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="img66" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/448510/header.jpg?t=1485425818">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-33&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶̶1̶̶6̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$11.38 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="img77" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/482730/header.jpg?t=1486049647">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-33&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶̶4̶̶9̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$33.49 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="img88" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/39140/header.jpg?t=1447357577">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-50&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶̶̶1̶̶1̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$5.99 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="img99" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/320040/header.jpg?t=1480712037">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-40&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶̶$̶1̶̶4̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$8.99 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="img998" class="img111 imga"><img src="http://cdn.akamai.steamstatic.com/steam/apps/341800/header.jpg?t=1485457917">
+                                <div class="img111_info">
+                                    <span class="price11_info" style="font-size:26px">-50&#37;</span>
+                                    <span class="price111_info">
+                                        <div style="font-size:12px" class="kkki">̶$̶̶̶̶1̶̶4̶̶.̶̶9̶̶9̶</div>
+                                        <div style="font-size:14px">$7.49 USD</div>
+                                    </span>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div id="right_part_3">
+                    <div class="right_part_2_nav">
+                        <span id="text11" class="text111">BROWSE STEAM</span>
+                    </div>
+                    <div id="right_part_3_body">
+                        <div id="dd1" class="ddd1">New Realease</div>
+                        <div id="dd2" class="ddd1">Specials</div>
+                        <div id="dd3" class="ddd1">Free Games</div>
+                        <div id="dd4" class="ddd1">By User Tags</div>
+                    </div>
+                </div>
+                 <div id="right_part_4">
+                    <div class="right_part_2_nav">
+                        <span id="text11" class="text111">STEAM CURATORS</span>
+                        <span id="text22" class="text222">BROWSE ALL</span>
+                        <span style="font-size:13px"><br>Discover new games through Steam Curators. Follow curators and see the games they recommend.</span>
+                     </div>
+                    <div id="right_part_4_body">
+                        <div class="fff">
+                                <div class="fff_img"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/bf/bf146d00fb17e4cc6a86529689a622a43f9f9440_medium.jpg"></div>
+                                <div class="fff_info">
+                                    <div class="fff_info1">Cynical Brit Gaming</div>
+                                    <div class="fff_info2">My name is TotalBiscuit and I run youtube.com/cynicalbrit. I work full time as a PC gaming critic</div>
+                                </div>
+                        </div>
+                        <div class="fff">
+                                <div class="fff_img"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/da/da87a741109856e24e56bbba245955e826c786ff_medium.jpg"></div>
+                                <div class="fff_info">
+                                    <div class="fff_info1">PC Gamer</div>
+                                    <div class="fff_info2">Ahoy! We seek out, evaluate, and celebrate the best things you can experience on your hand-crafted</div>
+                                </div>
+                        </div>
+                        <div class="fff">
+                                <div class="fff_img"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/23/23a0e6461db44a4cf0a7ded0efee9e544685c834_medium.jpg"></div>
+                                <div class="fff_info">
+                                    <div class="fff_info1">Just Good PC Games</div>
+                                    <div class="fff_info2">The name says it all, we look at simply good games, early access the works</div>
+                                </div>
+                        </div>
+                        <div class="fff">
+                                <div class="fff_img"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/ca/ca59b936422fcc4edeea834f8c4d5481053a190c_medium.jpg"></div>
+                                <div class="fff_info">
+                                    <div class="fff_info1">PC Masterace</div>
+                                    <div class="fff_info2">The official PCMR Curator, where an experienced and dedicated team recommends the best PC</div>
+                                </div>
+                        </div>
+                        <div class="fff">
+                                <div class="fff_img"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e7/e7e6e8a7ceed897f11362aaf43c3dd79cb792d24_medium.jpg"></div>
+                                <div class="fff_info">
+                                    <div class="fff_info1">Frankie</div>
+                                    <div class="fff_info2">Fun games from FRANKIE's videos as well as some upcoming ones!</div>
+                                </div>
+                        </div>
+                        <div class="fff">
+                                <div class="fff_img"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f7/f70d49486997beed11c015e9c6026f6e88a2f4a2_medium.jpg"></div>
+                                <div class="fff_info">
+                                    <div class="fff_info1">Rock, Paper, Shotgun</div>
+                                    <div class="fff_info2">We've been PC gaming since 1873, so you can rest assured that RPS's hand-picked selections</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="right_part_5">
+                    <div id="nav_5">
+                        <span id="nav51" class="nav5">Popular New Release</span>
+                        <span class="nav5">Top Sellers</span>
+                        <span class="nav5">Up Coming</span>
+                        <span class="nav5">Specials</span>
+                    </div>
+                    <div class="nav5_body">
+                                <div class="nav5_body_1">
+                                    <div class="nav5_game">
+                                        <div class="ggg_img"><img src="http://cdn.akamai.steamstatic.com/steam/apps/524580/capsule_184x69.jpg?t=1487119930"></div>
+                                        <div class="ggg_info">
+                                            <div class="ggg1">Fairy Fencer F Advent Dark Force</div>
+                                            <div class="ggg2"><i class="fa fa-windows" aria-hidden="true"></i>
+                                                <i class="fa fa-apple" aria-hidden="true"></i>
+                                                <i class="fa fa-steam-square" aria-hidden="true"></i>
+                                                <span class="ggggg1">-25%</span>
+                                                <span class="ggggg2"><span class="ggggggg">$̶4̶̶9̶̶.̶̶9̶̶9̶ </span>$37.49</span>
+                                            </div>
+                                            <div class="ggg3">RPG, Adventure, Anime, JRPG</div>
+                                        </div>
+                                    </div>
+                                    <div class="nav5_game">
+                                        <div class="ggg_img"><img src="http://cdn.akamai.steamstatic.com/steam/apps/506800/capsule_184x69.jpg?t=1487196007"></div>
+                                        <div class="ggg_info">
+                                            <div class="ggg1">ROMANCE OF THE THREE KINGDOMS</div>
+                                            <div class="ggg2"><i class="fa fa-windows" aria-hidden="true"></i>
+                                                <span class="ggggg1">-10%</span>
+                                                <span class="ggggg2"><span class="ggggggg">̶$̶3̶̶4̶̶.̶̶9̶̶9̶</span> $31.49</span>
+                                            </div>
+                                            <div class="ggg3">Simulation</div>
+                                        </div>
+                                        <div class="nav5_body_hover top_22">
+                                    <div class="fff1">ROMANCE OF THE THREE...</div>
+                                    <div class="fff2">Overall user reviews:
+                                                        <br><span style="color:#935334">Very Negative </span>(282)
+                                    </div>
+                                    <div class="fff55"><span class="fff5">Simulation</span></div>
+                                    <div class="fff3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/506800/ss_94f1665748c0c6200c26ea8538473a2988b1762c.600x338.jpg"></div>
+                                    <div class="fff4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/506800/ss_e90d995c127dbfd20c8c9938fbb44b40c8b25ece.600x338.jpg"></div>
+                                </div>
+                                    </div>
+                                    <div class="nav5_game">
+                                        <div class="ggg_img"><img src="http://cdn.akamai.steamstatic.com/steam/apps/449380/capsule_184x69.jpg?t=1487193630"></div>
+                                        <div class="ggg_info">
+                                            <div class="ggg1">Substance Designer 6</div>
+                                            <div class="ggg2"><i class="fa fa-windows" aria-hidden="true"></i>
+                                                <i class="fa fa-apple" aria-hidden="true"></i>
+                                                <i class="fa fa-steam-square" aria-hidden="true"></i>
+                                                <span class="ggggg4">$149.99</span>
+                                            </div>
+                                            <div class="ggg3">Animation &#38; Modeling, Design &#38; Illustration</div>
+                                        </div>
+                                        <div class="nav5_body_hover top_22">
+                                    <div class="fff1">Substance Designer 6</div>
+                                    <div class="fff2">Overall user reviews:
+                                                        <br><span style="color:#899196">No user reviews</span>
+                                    </div>
+                                    <div class="fff55"><span class="fff5">Animation &#38; Modeling</span><span class="fff5">Design &#38; Illustration</span></div>
+                                    <div class="fff3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/449380/ss_1173284a6dfd2242a2b439deeacd54972fdd9262.600x338.jpg"></div>
+                                    <div class="fff4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/449380/ss_8b5ed640bcd990605ee3f154c6a106e123f82609.600x338.jpg"></div>
+                                </div>
+                                    </div>
+                                    <div class="nav5_game">
+                                        <div class="ggg_img"><img src="http://cdn.akamai.steamstatic.com/steam/apps/497730/capsule_184x69.jpg?t=1487189849"></div>
+                                        <div class="ggg_info">
+                                            <div class="ggg1">The Wardrobe</div>
+                                            <div class="ggg2"><i class="fa fa-windows" aria-hidden="true"></i>
+                                                <span class="ggggg1">-15%</span>
+                                                <span class="ggggg2"><span class="ggggggg">̶̶$̶1̶̶4̶̶.̶̶9̶̶9̶</span> $12.74</span>
+                                            </div>
+                                            <div class="ggg3">Adventure, Point &#38; Click, 2D, Comedy</div>
+                                        </div>
+                                        <div class="nav5_body_hover top_22">
+                                    <div class="fff1">The Wardrobe</div>
+                                    <div class="fff2">Overall user reviews:
+                                                        <br><span style="color:#509CE4">Positive </span>(16)
+                                    </div>
+                                    <div class="fff55"><span class="fff5">Adventure</span><span class="fff5">Point &#38; Click</span><span class="fff5">2D</span><span class="fff5">Comedy</span></div>
+                                    <div class="fff3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/497730/ss_5c9fb30b1080f53608271cf8eca5d09a79463bb2.600x338.jpg?t=1487295918"></div>
+                                    <div class="fff4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/497730/ss_ec433e48e59f50a4dab08018783a6f302f683342.600x338.jpg?t=1487295918"></div>
+                                </div>
+                                    </div>
+                                    <div class="nav5_game">
+                                        <div class="ggg_img"><img src="http://cdn.akamai.steamstatic.com/steam/apps/505730/capsule_184x69.jpg?t=1487163560"></div>
+                                        <div class="ggg_info">
+                                            <div class="ggg1">Holy Potatoes! We’re in Space?!</div>
+                                            <div class="ggg2"><i class="fa fa-windows" aria-hidden="true"></i>
+                                                <i class="fa fa-apple" aria-hidden="true"></i>
+                                                <span class="ggggg4">$14.99</span>
+                                            </div>
+                                            <div class="ggg3">Indie, Adventure, Simulation, Space</div>
+                                        </div>
+                                        <div class="nav5_body_hover top_22">
+                                    <div class="fff1">Holy Potatoes! We’re in Space?!</div>
+                                    <div class="fff2">Overall user reviews:
+                                                        <br><span style="color:#509CE4">Positive </span>(35)
+                                    </div>
+                                    <div class="fff55"><span class="fff5">Indie</span><span class="fff5">Adventure</span><span class="fff5">Simulation</span><span class="fff5">Space</span></div>
+                                    <div class="fff3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/363600/ss_a777704a21fda02e15c9950db4b01f2a78f81b43.600x338.jpg?t=1484841905"></div>
+                                    <div class="fff4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/363600/ss_d798dbecda7057aba1d9a0321bde913c550a08b4.600x338.jpg?t=1484841905"></div>
+                                </div>
+                                    </div>
+                                </div>
+                                <div class="nav5_body_2">
+                                    <div class="fff1">Fairy Fencer F Advent Dark</div>
+                                    <div class="fff2">Overall user reviews:
+                                                        <br><span style="color:#509CE4">Very Positive </span>(101)
+                                    </div>
+                                    <div class="fff55"><span class="fff5">RPG</span><span class="fff5">Adventure</span><span class="fff5">Anime</span><span class="fff5">JRPG</span></div>
+                                    <div class="fff3"><img src="http://cdn.akamai.steamstatic.com/steam/apps/524580/ss_e8ac95968b90a86dfcb042782734904fcae2f3de.600x338.jpg"></div>
+                                    <div class="fff4"><img src="http://cdn.akamai.steamstatic.com/steam/apps/524580/ss_8db164725b51ff267d4ba90a09f96d69dcced988.600x338.jpg"></div>
+                                </div>
+                            </div>
+                 </div>
+                <div id="right_part_6">
+                    <span class="texttt">See more:</span>
+                    <span id="texttt222" class="text222">New Realease</span>
+                </div>
+                <div id="right_part_7">
+                    <div id="right_right3" class="icon_right1">
+                        <div class="dada">
+                            <div class="triangle4"></div>
+                            <div class="triangle5"></div>
+                        </div>
+                        <div class="adad">
+                            <div class="triangle6"></div>
+                        </div>
+                    </div>
+                    <div id="left_left3" class="icon_left1">
+                        <div class="kjkj">
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
+                        </div>
+                        <div class="jkjk">
+                            <div class="triangle3"></div>
+                        </div>
+                    </div>
+                    <div class="right_part_2_nav">
+                        <span id="text11" class="text111">SPECIAL OFFERS</span>
+                        <span id="text22222" class="text222">UNDER $10 USD</span>
+                        <span id="text222222" class="text222">UNDER $5 USD</span>
+                    </div>
+                    <div id="right_part_7_body">
+                        <div id="img123" class="img111 imga imga1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/39140/header.jpg?t=1447357577">
+                                <div class="img111_info img111_infoaaa">
+                                    <span class="price11_info jjjj" style="font-size:13px">-50&#37;</span>
+                                    <span class="price111_info hhhh">
+                                        <span style="font-size:11px">̶$̶̶̶1̶̶1̶̶.̶̶9̶̶9̶</span>
+                                        <span style="font-size:13px">$5.99 USD</span>
+                                    </span>
+                                </div>
+                        </div>
+                        <div id="img124" class="img111 imga imga1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/4000/header_292x136.jpg?t=1485979656">
+                                <div class="img111_info img111_infoaaa">
+                                    <span class="price111_info hhhh kkk">
+                                        <span style="font-size:13px">$9.99 USD</span>
+                                    </span>
+                                </div>
+                        </div>
+                        <div id="img125" class="img111 imga imga1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/292140/header_292x136.jpg?t=1447361146">
+                                <div class="img111_info img111_infoaaa">
+                                    <span class="price11_info jjjj" style="font-size:13px">-50&#37;</span>
+                                    <span class="price111_info hhhh">
+                                        <span style="font-size:11px">̶$̶̶̶1̶̶9̶.̶̶9̶̶9̶</span>
+                                        <span style="font-size:13px">$9.99 USD</span>
+                                    </span>
+                                </div>
+                        </div>
+                        <div id="img126" class="img111 imga imga1"><img src="http://cdn.akamai.steamstatic.com/steam/apps/105600/header_292x136.jpg?t=1479397782">
+                                <div class="img111_info img111_infoaaa">
+                                    <span class="price111_info hhhh kkk">
+                                        <span style="font-size:13px">$9.99 USD</span>
+                                    </span>
+                                </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div id="right_part_8">
+                    <div class="right_part_2_nav">
+                        <span id="text11" class="text111">UPDATES AND OFFERS</span>
+                    </div>
+                    <div id="right_part_8_body">
+                        <div class="qqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/1401802743901505277//images/message_image.jpg">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                        <div id="qq1" class="qqq qqqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/5311909067103351937//images/Now-Available.jpg">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                        <div id="qq2" class="qqq qqqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/2668805318381997059//images/message_image_FW.jpg">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                        <div id="qq3" class="qqq qqqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/5844073831586331840//images/English.jpg">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                        <div id="qq4" class="qqq qqqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/6344333424722291697//images/message_image.png">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                        <div id="qq5" class="qqq qqqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/7703487669290972543//images/message_image.jpg">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                        <div id="qq6" class="qqq qqqq"><img src="http://cdn.akamai.steamstatic.com/steam/marketing/1744952913404043922//images/message_image.jpg">
+                            <div class="qqq1">Click for details</div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <footer class="footer1">
+            <div class="footer11">
+                <div class="footer11_box">
+                    <div class="footer11_info">
+                        <div class="nnn">Looking for recommendations?</div>
+                        <div class="nnn1"><br>Sign in to view personalized recommendations</div>
+                        <br><div class="nnn2">Sign in</div>
+                        <div class="nnn1"><br>Or <a href=" " style="color:white">sign up</a> and join Steam for free</div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="footer22">
+                <div class="footeraaa"><img src="http://store.akamai.steamstatic.com/public/images/v6/logo_valve_footer.png"></div>
+                <div class="footerbbb">© 2017 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+VAT included in all prices where applicable. </div>
+                <div class="footerccc">
+                    <div class="f_ccc">Privacy Policy</div>
+                    <div class="f_ccc">Legal</div>
+                    <div class="f_ccc">Steam Subscriber Agreement </div>
+                    <div class="f_ccc f_ccc1">Refunds</div>
+                </div>
+                <div class="footerccc1">
+                    <div class="f_ccc">About Valve</div>
+                    <div class="f_ccc">Steamworks</div>
+                    <div class="f_ccc">Jobs</div>
+                    <div class="f_ccc ">Steam Distribution</div>
+                    <div class="f_ccc">Gift Cards</div>
+                    <div class="f_ccc f_ccc2"><i class="fa fa-facebook-square" aria-hidden="true"></i> Steam</div>
+                    <div class="f_ccc f_ccc1 f_ccc2"><i class="fa fa-twitter-square" aria-hidden="true"></i>   Steam Subscriber Agreement </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
